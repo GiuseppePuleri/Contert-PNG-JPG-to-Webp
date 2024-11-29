@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title></title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@zip.js/zip.js@2.3.13/dist/zip.min.js"></script>
+
+</head>
+
+<body>
+  <div class="hero_area" style="background-image: none!important;">
+    <section class="slider_section">
+      <div class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="padding:5%">
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="detail-box" style="text-align: center;">
+                    <h1 id="typewriter">
+                      Convert
+                      <br>
+                      WEBP
+                    </h1>
+                    <p>
+                      Scroll for more info
+                    </p>
+                    <div id="openModalBtn">
+                      <br>
+                      <br>
+                      <button style="color:white; --color1: #F9A845; --color2: #F9A845;" class="btn button-div">Open Pop Up to start</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="img-box">
+                    <img class="img-a" src="../images/d1.gif" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <h2 style="font-size:20px; text-align:center">Upload Zip and Insert Details</h2>
+          <br>
+          <form id="uploadForm">
+              <input type="hidden" name="nome-azione" value="ottimizza_immagini">
+
+              <div id="progressContainer" style="display: none;">
+                <label for="progressBar">Progress:</label>
+                <progress id="progressBar" value="0" max="100"></progress>
+                <span id="progressText">0%</span>
+              </div>
+              <br>
+              <label for="zipFile">Select ZIP:</label>
+              <input type="file" id="zipFile" accept=".zip" required>
+              <label for="storeTitle">Title:</label>
+              <input type="text" id="storeTitle" required>
+              <label for="photoAuthor">Photo author:</label>
+              <input type="text" id="photoAuthor" required>
+              <label for="phrases">Keyword:</label>
+              <input type="text" placeholder="Building photo" id="phrases" required>
+              <div class="row">
+                <div class="col-2">
+                  <button type="button" id="reload" style="color:white; width:100%; background-color: #FFF3CD;" class="custom-btn-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                      <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="col-10">
+                  <button type="submit" class="custom-btn-primary" id="submitButton" style="width:100%;">Send</button>
+                </div>
+              </div>
+          </form>
+      </div>
+    </div>
+  <!--FINE MODAL-->
+<br>
+<br>
+
+  <!-- do section -->
+  <section class="do_section layout_padding-bottom">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+            INSTRUCTIONS
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+            </div>
+            <div class="detail-box">
+              <h6>
+                ZIP folder with PNG AND JPG photos
+              </h6>
+              <p>
+                Before uploading the folder, make sure that there are photos inside with formats no different from PNG/JPG and that it is in .ZIP format
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-green">
+            <div class="img-box">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Upload folder
+              </h6>
+              <p>
+                Once you click on the 'START Optimization' button an interactive window will open, Choose the folder to convert. Then write the appropriate information in the box and press SEND.              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Download
+              </h6>
+              <p>
+                The client will take some time to process and convert the images. As soon as the conversion has taken place the folder will be downloaded to the browser.              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-green">
+            <div class="img-box">
+            </div>
+            <div class="detail-box">
+              <h6>
+                ADVANTAGES
+              </h6>
+              <p>
+                Once the process is completed your images will be optimized. The WEBP extension is suitable for the Web and the name of the old photos will be replaced with the given information.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    document.getElementById("reload").addEventListener("click", function() {
+        location.reload();
+    });
+  </script>
+
+  <script>
+
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        var submitButton = document.getElementById('submitButton');
+        var spinner = submitButton.querySelector('.spinner');
+
+        // Aggiungi la classe per disabilitare il bottone e mostrare lo spinner
+        submitButton.classList.add('button-disabled');
+        spinner.style.display = 'block'; // Mostra lo spinner
+
+        // Disabilita il bottone per evitare clic multipli
+        submitButton.disabled = true;
+    });
+
+    uploadForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      console.log('Submit event triggered');
+
+      const zipFile = document.getElementById('zipFile').files[0];
+      const storeTitle = document.getElementById('storeTitle').value;
+      const photoAuthor = document.getElementById('photoAuthor').value;
+      const phrases = document.getElementById('phrases').value.split(',').map(phrase => phrase.trim()).join('_');
+
+      console.log({ zipFile, storeTitle, photoAuthor, phrases });
+
+      if (zipFile && storeTitle && photoAuthor && phrases) {
+          try {
+              const convertedFiles = await convertImagesInZip(zipFile, storeTitle, photoAuthor, phrases);
+              const newZipBlob = await createZipFromFiles(convertedFiles);
+              downloadBlob(newZipBlob, 'converted_images.zip');
+          } catch (error) {
+              console.error('Error during file processing:', error);
+          }
+      } else {
+          alert('Per favore, carica un file ZIP e compila tutti i campi.');
+      }
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('modal');
+      const openModalBtn = document.getElementById('openModalBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const uploadForm = document.getElementById('uploadForm');
+      const progressContainer = document.getElementById('progressContainer');
+      const progressBar = document.getElementById('progressBar');
+      const progressText = document.getElementById('progressText');
+
+      openModalBtn.addEventListener('click', () => {
+          modal.style.display = 'block';
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+      });
+
+      window.addEventListener('click', (event) => {
+          if (event.target == modal) {
+              modal.style.display = 'none';
+          }
+      });
+
+      uploadForm.addEventListener('submit', async (event) => {
+          event.preventDefault();
+
+          const zipFile = document.getElementById('zipFile').files[0];
+          const storeTitle = document.getElementById('storeTitle').value;
+          const photoAuthor = document.getElementById('photoAuthor').value;
+          const phrases = document.getElementById('phrases').value.split(',').map(phrase => phrase.trim()).join('_');
+
+          if (zipFile && storeTitle && photoAuthor && phrases) {
+              try {
+                  progressContainer.style.display = 'block';
+                  await processFiles(zipFile, storeTitle, photoAuthor, phrases);
+              } catch (error) {
+                  console.error('Error during file processing:', error);
+              } finally {
+                  progressContainer.style.display = 'none';
+              }
+          } else {
+              alert('Per favore, carica un file ZIP e compila tutti i campi.');
+          }
+      });
+
+      async function processFiles(zipFile, storeTitle, photoAuthor, phrases) {
+          const convertedFiles = await convertImagesInZip(zipFile, storeTitle, photoAuthor, phrases);
+          const newZipBlob = await createZipFromFiles(convertedFiles);
+          downloadBlob(newZipBlob, 'converted_images.zip');
+      }
+
+      async function convertImagesInZip(zipFile, storeTitle, photoAuthor, phrases) {
+      const reader = new zip.ZipReader(new zip.BlobReader(zipFile));
+      const entries = await reader.getEntries();
+      const convertedFiles = [];
+      let counter = 0;
+      let progress = 0;
+      let firstImageName = "";
+
+      // Trova il nome del primo file immagine valido nel file ZIP
+      for (const entry of entries) {
+          if (entry.filename.endsWith('.png') || entry.filename.endsWith('.jpg') || entry.filename.endsWith('.jpeg')) {
+              firstImageName = entry.filename.replace(/\.[^/.]+$/, ""); // Rimuove l'estensione dal nome
+              break; // Esce dal ciclo dopo aver trovato il primo file immagine
+          }
+      }
+
+      // Aggiorna phrases con il nome del primo file immagine
+      const updatedPhrases = `${firstImageName}_${phrases}`;
+
+      // Processa ogni immagine nel file ZIP
+      for (const entry of entries) {
+          if (entry.filename.endsWith('.png') || entry.filename.endsWith('.jpg') || entry.filename.endsWith('.jpeg')) {
+              const blob = await entry.getData(new zip.BlobWriter());
+              const webpBlob = await convertToWebP(blob);
+              const uniqueId = Date.now() + counter;
+              const newFilename = `${updatedPhrases}_${storeTitle}-AutoreFoto:${photoAuthor}_${uniqueId}.webp`;
+              counter++;
+              convertedFiles.push({ filename: newFilename, blob: webpBlob });
+
+              // Aggiorna la barra di progresso
+              progress = Math.round((convertedFiles.length / entries.length) * 100);
+              updateProgressBar(progress);
+          }
+      }
+
+      await reader.close();
+      return convertedFiles;
+  }
+
+
+      async function convertToWebP(blob) {
+          const imageBitmap = await createImageBitmap(blob);
+          const canvas = document.createElement('canvas');
+          canvas.width = imageBitmap.width;
+          canvas.height = imageBitmap.height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(imageBitmap, 0, 0);
+
+          return new Promise((resolve, reject) => {
+              canvas.toBlob((blob) => {
+                  if (blob) {
+                      resolve(blob);
+                  } else {
+                      reject(new Error('Conversion to WebP failed.'));
+                  }
+              }, 'image/webp');
+          });
+      }
+
+      async function createZipFromFiles(files) {
+          const writer = new zip.ZipWriter(new zip.BlobWriter("application/zip"));
+
+          for (const file of files) {
+              await writer.add(file.filename, new zip.BlobReader(file.blob));
+          }
+
+          return writer.close();
+      }
+
+      function downloadBlob(blob, filename) {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(() => {
+              document.body.removeChild(a);
+              URL.revokeObjectURL(url);
+          }, 0);
+      }
+
+      function updateProgressBar(value) {
+          progressBar.value = value;
+          progressText.textContent = `${value}%`;
+      }
+  });
+
+</script>
+
+</body>
+
+</html>
